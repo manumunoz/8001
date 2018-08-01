@@ -70,30 +70,11 @@ class Player(BasePlayer):
     belief_endo= models.BooleanField() # Reported belief on P3's verification
 
     def assigning_values(self):
-        if self.treat == 1:
-            self.rnum = Constants.imp_rnum_T1[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T1[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T1[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-        elif self.treat == 2:
-            self.rnum = Constants.imp_rnum_T2[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T2[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T2[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-        elif self.treat == 3:
-            self.rnum = Constants.imp_rnum_T3[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T3[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T3[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-        elif self.treat == 4:
-            self.rnum = Constants.imp_rnum_T4[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T4[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T4[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-        elif self.treat == 5:
-            self.rnum = Constants.imp_rnum_T5[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T5[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T5[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-        else:
-            self.rnum = Constants.imp_rnum_T11[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_1 = Constants.imp_report1_T11[self.id_in_group - 1] #This is to test. It must be replaced before running the session
-            self.report_2 = Constants.imp_report2_T11[self.id_in_group - 1] #This is to test. It must be replaced before running the session
+        self.rnum = int(Constants.data_player1[self.id_in_group][4])
+        self.report_1 = int(Constants.data_player1[self.id_in_group][5])
+        self.report_2 = int(Constants.data_player1[self.id_in_group][6])
+        self.p_code = Constants.data_player1[self.id_in_group][1]
+        self.ses_code = Constants.data_player1[self.id_in_group][2]
 
     def random_display(self):
         self.random_show = random.randint(1, 100)
