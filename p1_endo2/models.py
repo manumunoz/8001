@@ -64,8 +64,8 @@ class Player(BasePlayer):
     belief1 = models.IntegerField(min=Constants.min_report, max=Constants.max_report) # Reported belief on P1's choices
     belief2 = models.IntegerField(min=Constants.min_report, max=Constants.max_report) # Reported belief on P2's choices
     belief3 = models.IntegerField(min=Constants.min_report, max=Constants.max_report) # Reported belief on P3's choices
-    belief_endo= models.BooleanField() # Reported belief on P3's verification
-    random_group = models.IntegerField()
+    belief_endo = models.BooleanField() # Reported belief on P3's verification
+    random_group = models.IntegerField(min=1000000000, max=9999999999)
     player_role = models.IntegerField()
 
     def random_display(self):
