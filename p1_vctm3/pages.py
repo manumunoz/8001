@@ -7,6 +7,9 @@ class Welcome(Page):
     def is_displayed(self):
         return self.round_number == 1
 
+    def before_next_page(self):
+        self.player.random_display()
+
 class Sociodemo(Page):
     form_model = 'player'
     form_fields = ['gender', 'ethnicity', 'race', 'age', 'education', 'state', 'income']

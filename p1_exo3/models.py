@@ -29,6 +29,9 @@ class Constants(BaseConstants):
     instructions_belief_yesno = 'p1_exo3/Instbeliefyesno.html'
     exo_prob_show = 80 # Complete for EXO once ENDO is conducted
     exo_prob_no_show = 20 # Complete for EXO once ENDO is conducted
+    payment_days = 30
+    show_up_fee = 1
+    total_pay = 2.70
 
 class Subsession(BaseSubsession):
     def creating_session(self):
@@ -62,6 +65,12 @@ class Player(BasePlayer):
     belief2 = models.IntegerField(min=Constants.min_report, max=Constants.max_report) # Reported belief on P2's choices
     belief3 = models.IntegerField(min=Constants.min_report, max=Constants.max_report) # Reported belief on P3's choices
     belief_endo = models.BooleanField() # Reported belief on P3's verification
+    random_group = models.IntegerField()
+    player_role = models.IntegerField()
+
+    def random_display(self):
+        self.random_group = random.randint(1000000000, 9999999999)
+        self.player_role = 1
 
     gender = models.PositiveIntegerField(
         choices=[
