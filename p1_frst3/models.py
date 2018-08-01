@@ -4,7 +4,7 @@ from otree.api import (
 )
 import random
 import itertools
-import csv
+# import csv
 
 
 author = 'Manu Munoz-Herrera'
@@ -18,8 +18,8 @@ class Constants(BaseConstants):
     name_in_url = 'MTurk_P1_frst3'
     players_per_group = None
     num_rounds = 1
-    exchange_rate=c(3)
-    belief_pay=c(20)
+    exchange_rate = c(3)
+    belief_pay = c(20)
     min_report = 1
     max_report = 30
     num_blocks = 144
