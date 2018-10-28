@@ -131,6 +131,27 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
+        'name': 'p1_endo3',
+        'display_name': "p1_endo3",
+        'num_demo_participants': 8,
+        'app_sequence': ['p1_endo3'],
+        'treatment': 4,
+    },
+    {
+        'name': 'p2_endo3',
+        'display_name': "p2_endo3",
+        'num_demo_participants': 8,
+        'app_sequence': ['p2_endo3'],
+        'treatment': 4,
+    },
+    {
+        'name': 'p3_endo3',
+        'display_name': "p3_endo3",
+        'num_demo_participants': 8,
+        'app_sequence': ['p3_endo3'],
+        'treatment': 4,
+    },
+    {
         'name': 'full_switch',
         'display_name': "full_switch",
         'num_demo_participants': 7,
