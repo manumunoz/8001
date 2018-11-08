@@ -131,6 +131,12 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
+        'name': 'unab',
+        'display_name': "unab",
+        'num_demo_participants': 1,
+        'app_sequence': ['unab', ],
+    },
+    {
         'name': 'p1_endo3',
         'display_name': "p1_endo3",
         'num_demo_participants': 8,
