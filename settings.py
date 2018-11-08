@@ -136,59 +136,6 @@ SESSION_CONFIGS = [
         'num_demo_participants': 1,
         'app_sequence': ['unab', ],
     },
-    {
-        'name': 'p1_endo3',
-        'display_name': "p1_endo3",
-        'num_demo_participants': 8,
-        'app_sequence': ['p1_endo3'],
-        'treatment': 4,
-    },
-    {
-        'name': 'p2_endo3',
-        'display_name': "p2_endo3",
-        'num_demo_participants': 8,
-        'app_sequence': ['p2_endo3'],
-        'treatment': 4,
-    },
-    {
-        'name': 'p3_endo3',
-        'display_name': "p3_endo3",
-        'num_demo_participants': 8,
-        'app_sequence': ['p3_endo3'],
-        'treatment': 4,
-    },
-    {
-        'name': 'full_switch',
-        'display_name': "full_switch",
-        'num_demo_participants': 7,
-        'app_sequence': ['switch_inst_p1','switch_p1','switch_inst_p2','switch_p2'],
-        'treatment': 1,
-    },
-    {
-        'name': 'switch_p1',
-        'display_name': "switch_p1",
-        'num_demo_participants': 7,
-        'app_sequence': ['switch_p1'],
-    },
-    {
-        'name': 'switch_p2',
-        'display_name': "switch_p2",
-        'num_demo_participants': 7,
-        'app_sequence': ['switch_p2'],
-        'treatment': 1,
-    },
-    {
-        'name': 'switch_inst_p1',
-        'display_name': "switch_inst_p1",
-        'num_demo_participants': 1,
-        'app_sequence': ['switch_inst_p1'],
-    },
-    {
-        'name': 'switch_inst_p2',
-        'display_name': "switch_inst_p2",
-        'num_demo_participants': 1,
-        'app_sequence': ['switch_inst_p2'],
-    },
 ]
 
 # anything you put after the below line will override
